@@ -53,3 +53,15 @@ function onlyElementAtEvenIndex(array) {
 }
 
 // console.log(onlyElementAtEvenIndex([1, 2, 3, 4, 5, 6, 7, 8, 32, 42, 452, 555]));
+
+function printAllPairsInArrayOfString(n) {
+  var pair = [];
+  for (var i = 1; i <= n; i++) {
+    for (var j = 1; j <= n; j++) {
+      pair.push(i + "" + j);
+    }
+  }
+  return pair;
+}
+
+console.log(printAllPairsInArrayOfString(5));
