@@ -1,3 +1,26 @@
+function takeShower() {
+  return "Showering"
+}
+
+function eatBreakfast() {
+  let meal = cookFood()
+  return `Eating ${meal}`
+}
+
+function cookFood() {
+  let item =["oatmeal", "Eggs", "Protein Shake"]
+  return item[Math.floor(Math.random() * item.length)]
+}
+
+function wakeup() {
+  takeShower()
+  eatBreakfast()
+  console.log("ok ready to go to work")
+}
+
+// wakeup()
+
+
 function countDownRecursive(num) {
   console.log("-", num);
   if (num <= 0) {
